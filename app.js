@@ -56,11 +56,15 @@ function sortearAmigo(){
     ul.innerHTML = '';
     li = document.createElement("li");
     li.textContent = listaDeNomes[sorteioDeNome];
-    ul.appendChild(li)
+    ul.appendChild(li);
+    reiniciarJogo();
     
 }
 
 
-
+function reiniciarJogo(){
+    listaDeNomes = [];
+    limparCampoInput();
+}
 
 
